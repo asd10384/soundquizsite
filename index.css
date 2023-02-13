@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  color: white;
+  background-color: rgb(65, 65, 65);
+}
+.main {
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.quiz {
+  margin-bottom: 10px;
+}
+.text {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.text:hover {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(200, 200, 200);
+}
+.back, .back a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+.back a:hover {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(200, 200, 200);
+}
+.info {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.audio {
+  margin-bottom: 30px;
+}
+.audio audio {
+  font-size: 15px;
+}
