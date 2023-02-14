@@ -6,7 +6,7 @@ const parmas = location.search.split(/[?&]/).slice(1).map(paramPair => paramPair
   return obj;
 }, {});
 
-$(`.list`).load("./quiz_list.js", (txt, status) => {
+$(`.list`).load("./sounds/quiz_list.js", (txt, status) => {
   if (status == "error") {
     $(`.main`).html(`<h1>파일을 불러올수 없음</h1>`);
   } else {
