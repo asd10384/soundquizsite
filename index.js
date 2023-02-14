@@ -32,7 +32,7 @@ $(`.list`).load("./quiz_list.js", (txt, status) => {
             let sound_list = eval(txt2);
             var text = `<div class="back"><a href="/">돌아가기</a></div></div><div class="info"><div class="title">${quizName}</div><div class="desc">설명 : ${quiz.desc}</div><div class="complite">완성도 : ${quiz.complite}%</div><div class="start">시작가능여부 : ${quiz.start ? "TRUE" : "FALSE"}</div><div class="length">문제수 : ${sound_list.length}개</div></div>\n`;
             for (let i of sound_list) {
-              text += `<div class="sound"><div class="name">${i}</div><div class="audio"><audio src="./sounds/${parmas.quiz}/file/${encodeURIComponent(i)}.mp3" controls>오디오를 재생할수 없는 기기입니다.</audio></div></div>`;
+              text += `<div class="sound"><div class="name">${i}<br/><a href="/sounds/${parmas.quiz}/images/${encodeURIComponent(i.replace(".mp3",""))}.jpg" target="_blank">(새 탭에서 사진보기)</a></div><div class="audio"><audio src="./sounds/${parmas.quiz}/file/${encodeURIComponent(i)}.mp3" controls>오디오를 재생할수 없는 기기입니다.</audio></div></div>`;
             }
             $(`.main`).html(text);
           }
